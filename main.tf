@@ -73,8 +73,7 @@ module "td" {
 # ECS Service
 #------------------------------------------------------------------------------
 module "ecs-fargate-service" {
-  source  = "cn-terraform/ecs-fargate-service/aws"
-  version = "2.0.18"
+  source  = "github.com/chanhht/terraform-aws-ecs-fargate-service"
   # source  = "../terraform-aws-ecs-fargate-service"
 
   name_prefix = var.name_prefix
